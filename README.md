@@ -16,4 +16,5 @@ docker build -f Dockerfile.ppc64le -t kubeflow123/tf-dist-mnist-test:1.0 ./
 ## Create TFJob YAML
 
 `kubectl create -f ./tf_job_mnist.yaml`
+
 If on ppc64le, please update tf_job_mnist.yaml to use the image of ppc64le firstly.
